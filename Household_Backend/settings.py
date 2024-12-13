@@ -11,7 +11,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*", "https://houshold-backend-recoverd.onrender.com/"]
 
-CORS_ALLOWED_ORIGINS = [
+CORS_ALLOWED_ORIGINS = [ 
     'https://house-hold-theta.vercel.app/',
 ]
 
