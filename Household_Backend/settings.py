@@ -4,15 +4,16 @@ import os
 import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
 SECRET_KEY = 'django-insecure-iv^p)@9#)y_yemi&8tia3(jg_ga6an$aqrifv^1s-5c3u#0)u3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*", "https://houshold-backend-recoverd.onrender.com/"]
+ALLOWED_HOSTS = ["*", "https://household-backend-a4k7.onrender.com/"]
 
-CORS_ALLOWED_ORIGINS = [ 
-    'https://house-hold-theta.vercel.app/',
+CORS_ALLOWED_ORIGINS = [
+    'https://house-hold-front-end.vercel.app',
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
@@ -108,11 +109,22 @@ WSGI_APPLICATION = 'Household_Backend.wsgi.application'
 # }
 
 
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Replace this value with your local database's connection string.
+#         default='postgresql://houshold_backend_user:hDBw4EUJ8gDYKuAF5rbxvbTXiReGgxK6@dpg-cte5guggph6c73bqbb8g-a.singapore-postgres.render.com/houshold_backend',
+#         # conn_max_age=600
+#     )
+# }
+
+# Add these at the top of your settings.py
+
+
 DATABASES = {
     'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://houshold_backend_user:hDBw4EUJ8gDYKuAF5rbxvbTXiReGgxK6@dpg-cte5guggph6c73bqbb8g-a.singapore-postgres.render.com/houshold_backend',
-        # conn_max_age=600
+        default='postgresql://neondb_owner:wqLNeY8ih4mJ@ep-autumn-wind-a52lixn7.us-east-2.aws.neon.tech/neondb?sslmode=require',
+        conn_max_age=600,
+        ssl_require=True
     )
 }
 
