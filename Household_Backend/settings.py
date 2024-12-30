@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'Household_Backend.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://neondb_owner:wqLNeY8ih4mJ@ep-autumn-wind-a52lixn7.us-east-2.aws.neon.tech/neondb?sslmode=require',
+        default='postgresql://neondb_owner:GdeS3VzhRkj6@ep-royal-sound-a507uq72.us-east-2.aws.neon.tech/neondb?sslmode=require',
         conn_max_age=600,
         # ssl_require=True
     )
