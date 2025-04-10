@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "Household_Backend/wsgi.py"
+    }
+  ]
+}
